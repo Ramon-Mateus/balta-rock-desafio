@@ -1,27 +1,31 @@
-# BaltaRockDesafio
+![balta](https://baltaio.blob.core.windows.net/static/images/dark/balta-logo.svg)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
+## 🎖️ Desafio
+**Dia do Rock 2024** é a quinta edição dos **Desafios .NET** realizados pelo [balta.io](https://balta.io). Durante esta jornada, fizemos parte da banda **Breaking Benjamin** onde entregamos um layout completo de uma aplicação para gestão de eventos.
 
-## Development server
+## 📱 Projeto
+Desenvolvimento de um layout completo para de uma aplicação para visualização e gestão de eventos, utilizando as tecnologias Angular e Tailwind.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Participantes
+### 🚀 Empresário da Banda
+[Ramon Mateus](https://github.com/Ramon-Mateus/)
 
-## Code scaffolding
+### 🎸 Banda
+* [Rômulo da Silva](https://github.com/rommuloifrn)
+* [Ester Oliveira](https://github.com/esteroliver)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## ⚙️ Tecnologias
+* Angular
+* Tailwind
 
-## Build
+## 🥋 Skills Desenvolvidas
+* Comunicação
+* Trabalho em Equipe
+* Networking
+* Muito conhecimento técnico
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🧪 Como testar o projeto
+[DESCREVER COMO EXECUTAR O PROJETO]
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# 💜 Participe
+Quer participar dos próximos desafios? Junte-se a [maior comunidade .NET do Brasil 🇧🇷 💜](https://balta.io/discord)
