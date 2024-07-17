@@ -10,20 +10,23 @@ export class EventService {
     {
       id: 1,
       name: "GoRN",
-      data: "2024-08-15",
-      local: "Estádio Arena das Dunas"
+      date: "2024-08-15",
+      local: "Estádio Arena das Dunas",
+      adress: "Avenida Rio Branco"
     },
     {
       id: 2,
       name: "GGCON",
-      data: "2024-08-30",
-      local: "Estacionamento do Via Direta"
+      date: "2024-08-30",
+      local: "Estacionamento do Via Direta",
+      adress: "Avenida Rio Branco"
     },
     {
       id: 3,
       name: "Angra",
-      data: "2024-09-10",
-      local: "Teatro Riachuelo"
+      date: "2024-09-10",
+      local: "Teatro Riachuelo",
+      adress: "Avenida Rio Branco"
     }
   ]
 
@@ -33,7 +36,11 @@ export class EventService {
     return this.eventList
   }
 
-  getEventById(id: number): Event | undefined {
-    return this.eventList.find(event => event.id === id);
+  getEventByName(contain: string): Event[] | [] {
+    // let events = this.eventList.filter(event => event.name.toLowerCase().includes(contain));
+    // if(events.length > 0) {
+    //   return events;
+    // }
+    return this.eventList.filter(event => event.name.toLowerCase().includes(contain));
   }
 }

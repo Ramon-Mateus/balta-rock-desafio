@@ -1,7 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
+import { EventComponent } from './components/event/event.component';
+import { EventService } from './services/event.service';
+import { Event } from './types';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -9,17 +13,28 @@ import { FormsModule } from '@angular/forms';
   imports: [
     RouterOutlet,
     NavBarComponent,
-    FormsModule
+    FormsModule,
+    EventComponent,
+    CommonModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit
+ {
+  private eventService: EventService = inject(EventService);
   eventSearch: string = '';
+  events: Event[] = [];
 
   searchEvents(): void {
     if(this.eventSearch.trim()) {
-      console.log(this.eventSearch)
+      this.events = this.eventService.getEventByName(this.eventSearch.trim())
+    } else {
+      this.events = this.eventService.getAllEvents();
     }
+  }
+
+  ngOnInit() {
+    this.events = this.eventService.getAllEvents();
   }
 }
