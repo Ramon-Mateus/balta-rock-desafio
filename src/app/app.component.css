@@ -1,0 +1,12 @@
+.tabcontent {
+    display: none;
+}
+
+.tabcontent:target {
+    display: block;
+    opacity: 1;
+}
+
+#map:target {
+    display: none;
+}
