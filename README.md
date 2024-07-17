@@ -18,6 +18,11 @@ Desenvolvimento de um layout completo para de uma aplicação para visualizaçã
 * Angular
 * Tailwind
 
+## Objetivos
+- [ ] Componentes iniciais
+- [ ] Serviço de mapa
+- [ ] Serviço de armazenamento
+
 ## 🥋 Skills Desenvolvidas
 * Comunicação
 * Trabalho em Equipe
