@@ -1,17 +1,17 @@
-<form [formGroup]="evento">
-    <label>
-        Banda
-        <input type="text" name="name" formControlName="name">
-    </label>
-    <label>
-        Data
-        <input type="text" name="data" formControlName="data">
-    </label>
-    <label>
-        Local
-        <input type="text" name="local" formControlName="local">
-    </label>
-    <label>
-        <input type="button" value="Salvar evento">
-    </label>
-</form>
+<form (ngSubmit)="onSubmit()" #eventForm="ngForm">
+    <div class="form-group">
+        <label>
+            Banda
+            <input type="text" name="name" class="form-control" [(ngModel)]="model.name" #name="ngModel" required>
+        </label>
+        <label>
+            Data
+            <input type="text" name="data" class="form-control" [(ngModel)]="model.data" #data="ngModel" required>
+        </label>
+        <label>
+            Local
+            <input type="text" name="local" class="form-control" [(ngModel)]="model.local" #local="ngModel" required>
+        </label>
+        <button type="submit" [disabled]="!eventForm.form.valid">Salvar evento</button>
+    </div>
+</form> 

@@ -1,17 +1,18 @@
 import { Component } from '@angular/core';
-import {FormControl, FormGroup} from '@angular/forms';
+import { Event } from '../model/event';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 
 @Component({
   selector: 'app-new-event',
   standalone: true,
-  imports: [],
+  imports: [FormsModule, ReactiveFormsModule],
   templateUrl: './new-event.component.html',
   styleUrl: './new-event.component.css'
 })
 export class NewEventComponent {
-  public evento = new FormGroup({
-    name: new FormControl(),
-    local: new FormControl(),
-    data: new FormControl()
-  });  
+  model = new Event('Show', 'Arena das Dunas', '20-07-2024');
+  submitted = false;
+  onSubmit() {
+    this.submitted = true;
+  }
 }
