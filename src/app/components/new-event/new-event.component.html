@@ -1,17 +1,20 @@
-<form (ngSubmit)="onSubmit()" #eventForm="ngForm">
-    <div class="form-group">
-        <label>
+<form (ngSubmit)="onSubmit()" #eventForm="ngForm" class="f-full">
+    <div class="form-group" class="flex flex-col">
+        <label class="font-sans font-normal">
             Banda
-            <input type="text" name="name" class="form-control" [(ngModel)]="model.name" #name="ngModel" required>
+            <br>
+            <input type="text" name="name" class="form-control" [(ngModel)]="model.name" #name="ngModel" required class="font-sans font-normal w-full">
         </label>
-        <label>
+        <label class="font-sans font-normal">
             Data
-            <input type="text" name="data" class="form-control" [(ngModel)]="model.data" #data="ngModel" required>
+            <br>
+            <input type="text" name="data" class="form-control" [(ngModel)]="model.data" #data="ngModel" required class="font-sans font-normal w-full">
         </label>
-        <label>
+        <label class="font-sans font-normal">
             Local
-            <input type="text" name="local" class="form-control" [(ngModel)]="model.local" #local="ngModel" required>
+            <br>
+            <input type="text" name="local" class="form-control" [(ngModel)]="model.local" #local="ngModel" required class="font-sans font-normal w-full">
         </label>
-        <button type="submit" [disabled]="!eventForm.form.valid">Salvar evento</button>
+        <button type="submit" [disabled]="!eventForm.form.valid" class="font-sans font-normal">Salvar evento</button>
     </div>
 </form> 
