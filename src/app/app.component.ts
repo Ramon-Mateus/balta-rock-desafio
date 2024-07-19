@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EventComponent } from './components/event/event.component';
-import { EventService } from './services/event.service';
+import { ShowService } from './services/show.service';
 import { Show } from './types';
 import { CommonModule } from '@angular/common';
 import { NewEventComponent } from './components/new-event/new-event.component';
@@ -28,19 +28,19 @@ import { MapComponent } from "./components/map/map.component";
 })
 export class AppComponent implements OnInit
  {
-  private eventService: EventService = inject(EventService);
+  private showService: ShowService = inject(ShowService);
   showSearch: string = '';
   shows: Show[] = [];
 
-  searchEvents(): void {
+  searchShows(): void {
     if(this.showSearch.trim()) {
-      this.shows = this.eventService.getEventByName(this.showSearch.trim())
+      this.shows = this.showService.getShowsByName(this.showSearch.trim())
     } else {
-      this.shows = this.eventService.getAllEvents();
+      this.shows = this.showService.getAllShows();
     }
   }
 
   ngOnInit() {
-    this.shows = this.eventService.getAllEvents();
+    this.shows = this.showService.getAllShows();
   }
 }

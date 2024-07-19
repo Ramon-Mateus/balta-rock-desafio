@@ -4,7 +4,9 @@ import { Show } from '../types';
 @Injectable({
   providedIn: 'root'
 })
-export class EventService {
+export class ShowService {
+
+  constructor() { }
 
   private showList: Show[] = [
     {
@@ -27,17 +29,15 @@ export class EventService {
     }
   ]
 
-  constructor() { }
-
-  getAllEvents(): Show[] {
+  getAllShows(): Show[] {
     return this.showList
   }
 
-  getEventByName(contain: string): Show[] | [] {
-    // let events = this.eventList.filter(event => event.name.toLowerCase().includes(contain));
-    // if(events.length > 0) {
-    //   return events;
-    // }
+  getShowsByName(contain: string): Show[] | [] {
     return this.showList.filter(show => show.name.toLowerCase().includes(contain));
+  }
+
+  createShow(show: Show): void {
+    this.showList.push(show);
   }
 }
