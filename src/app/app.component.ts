@@ -7,6 +7,7 @@ import { EventService } from './services/event.service';
 import { Show } from './types';
 import { CommonModule } from '@angular/common';
 import { NewEventComponent } from './components/new-event/new-event.component';
+import { MapComponent } from "./components/map/map.component";
 
 
 @Component({
@@ -19,8 +20,9 @@ import { NewEventComponent } from './components/new-event/new-event.component';
     EventComponent,
     CommonModule,
     NewEventComponent,
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule,
+    MapComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
