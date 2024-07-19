@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Event } from '../model/event';
+import { Show } from '../../types';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 
 @Component({
@@ -10,7 +10,7 @@ import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
   styleUrl: './new-event.component.css'
 })
 export class NewEventComponent {
-  model = new Event('Show', 'Arena das Dunas', '20-07-2024');
+  model: Show = {'name': '', 'local': '', 'date': '', 'adress': ''};
   submitted = false;
   onSubmit() {
     this.submitted = true;

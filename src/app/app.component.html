@@ -6,10 +6,10 @@
             <h1 class="text-gray-500 text-lg mt-6">Buscar um evento</h1>
             <div class="relative mb-10">
                 <span class="pi pi-search absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-800"></span>
-                <input class="bg-gray-300 rounded-sm w-full h-10 mt-1 focus:outline-none pl-9" type="text" id="search" name="search" [(ngModel)]="eventSearch" (keyup.enter)="searchEvents()">
+                <input class="bg-gray-300 rounded-sm w-full h-10 mt-1 focus:outline-none pl-9" type="text" id="search" name="search" [(ngModel)]="showSearch" (keyup.enter)="searchEvents()">
             </div>
 
-            <app-event *ngFor="let event of events" [event]="event"></app-event>
+            <app-event *ngFor="let show of shows" [show]="show"></app-event>
 
         </section>
         

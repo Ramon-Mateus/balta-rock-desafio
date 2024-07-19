@@ -1,5 +1,4 @@
-export interface Event {
-    id: number;
+export interface Show {
     name: string;
     date: string;
     local: string;
