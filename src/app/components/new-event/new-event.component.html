@@ -3,19 +3,19 @@
         <label class="font-sans font-normal">
             Banda
             <br>
-            <input type="text" name="name" class="form-control" [(ngModel)]="model.name" #name="ngModel" required class="font-sans font-normal w-full">
+            <input type="text" name="name" [(ngModel)]="model.name" #name="ngModel" required class="font-sans font-normal w-full bg-gray-300 focus:outline-none rounded-md mt-1">
         </label>
         <label class="font-sans font-normal">
             Data
             <br>
-            <input type="text" name="data" class="form-control" [(ngModel)]="model.date" #data="ngModel" required class="font-sans font-normal w-full">
+            <input type="text" name="data" [(ngModel)]="model.date" #data="ngModel" required class="font-sans font-normal w-full bg-gray-300 focus:outline-none rounded-md mt-1">
         </label>
         <label class="font-sans font-normal">
             Local
             <br>
-            <input type="text" name="local" class="form-control" [(ngModel)]="model.local" #local="ngModel" required class="font-sans font-normal w-full">
+            <input type="text" name="local" [(ngModel)]="model.local" #local="ngModel" required class="font-sans font-normal w-full bg-gray-300 focus:outline-none rounded-md mt-1">
         </label>
-        <button type="submit" [disabled]="!eventForm.form.valid" class="font-sans font-normal">Salvar evento</button>
+        <button type="submit" [disabled]="!eventForm.form.valid" class="font-sans font-normal bg-roxo-balta w-full">Salvar evento</button>
         <p class="font-sans font-normal">Preciso de ajuda.</p>
     </div>
-</form> 
+</form>
