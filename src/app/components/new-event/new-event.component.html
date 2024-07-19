@@ -8,12 +8,17 @@
         <label class="font-sans font-normal">
             Data
             <br>
-            <input type="text" name="data" [(ngModel)]="model.date" #data="ngModel" required class="font-sans font-normal w-full bg-gray-300 focus:outline-none rounded-md mt-1">
+            <input type="date" name="data" [(ngModel)]="model.date" #data="ngModel" required class="font-sans font-normal w-full bg-gray-300 focus:outline-none rounded-md mt-1">
         </label>
         <label class="font-sans font-normal">
             Local
             <br>
-            <input type="text" name="local" [(ngModel)]="model.local" #local="ngModel" required class="font-sans font-normal w-full bg-gray-300 focus:outline-none rounded-md mt-1">
+            <input type="text" name="local" [(ngModel)]="model.local" #local="ngModel" required class="font-sans font-normal w-full bg-gray-300 focus:outline-none rounded-md mt-1">            
+        </label>
+        <label class="font-sans font-normal">
+            Endereço
+            <br>
+            <input type="text" name="adress" [(ngModel)]="model.adress" #local="ngModel" required class="font-sans font-normal w-full bg-gray-300 focus:outline-none rounded-md mt-1">            
         </label>
         <button type="submit" [disabled]="!eventForm.form.valid" class="font-sans font-normal bg-roxo-balta w-full">Salvar evento</button>
         <p class="font-sans font-normal">Preciso de ajuda.</p>

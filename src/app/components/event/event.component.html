@@ -1,9 +1,12 @@
 <div class="flex justify-between items-center p-1">
-    <img src="assets/Angra.jpg" alt="local do evento" class="rounded-full h-auto w-16 bg-contain">
-    <div>
-        <h1 class="font-semibold">{{show.local}}</h1>
-        <p>R. Tangipuru, 795 - Barra Funda</p>
-        <p>São Paulo - SP</p>
+    <img src="assets/Angra.jpg" alt="local do evento" class="rounded-full h-auto w-20 bg-contain">
+    <div class="flex items-center justify-between w-full">
+        <div class="ml-3">
+            <h1 class="font-semibold">{{show.name}}</h1>
+            <p>{{show.local}}</p>
+            <p>{{show.adress}}</p>
+            <p>Rio Grande do Norte - RN</p>
+        </div>
+        <div class="font-semibold text-gray-700">{{show.date}}</div>
     </div>
-    <div class="font-semibold text-gray-700">{{show.date}}</div>
 </div>
