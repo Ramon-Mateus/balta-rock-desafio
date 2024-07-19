@@ -1,0 +1,38 @@
+label{
+    padding-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: gray;
+}
+input{
+    border: 0px solid rgb(182, 182, 182);
+    border-radius: 15px;
+    color: black;
+    font-weight: 500;
+    font-size: 1.2rem;
+    background-color: #E7E8E1;
+    padding: 1rem;
+}
+form{
+    padding: 1.5rem;
+    padding-top: 2rem;
+    background-color: #EAEBE4;
+    width: 30rem;
+}
+button{
+    width: 20rem;
+    margin: auto;
+    background-color: #8625D2;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+p{
+    margin: auto;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    font-weight: 400;
+    color: gray;
+}

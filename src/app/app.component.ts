@@ -6,6 +6,9 @@ import { EventComponent } from './components/event/event.component';
 import { EventService } from './services/event.service';
 import { Event } from './types';
 import { CommonModule } from '@angular/common';
+import { NewEventComponent } from './components/new-event/new-event.component';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+
 
 @Component({
   selector: 'app-root',
@@ -15,8 +18,11 @@ import { CommonModule } from '@angular/common';
     NavBarComponent,
     FormsModule,
     EventComponent,
-    CommonModule
+    CommonModule,
+    NewEventComponent,
+    ReactiveFormsModule
   ],
+  imports: [RouterOutlet, NavBarComponent, NewEventComponent, FormsModule, ReactiveFormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
