@@ -18,11 +18,6 @@ Desenvolvimento de um layout completo para de uma aplicação para visualizaçã
 * Angular
 * Tailwind
 
-## Objetivos
-- [ ] Componentes iniciais
-- [ ] Serviço de mapa
-- [ ] Serviço de armazenamento
-
 ## 🥋 Skills Desenvolvidas
 * Comunicação
 * Trabalho em Equipe
@@ -30,7 +25,17 @@ Desenvolvimento de um layout completo para de uma aplicação para visualizaçã
 * Muito conhecimento técnico
 
 ## 🧪 Como testar o projeto
-[DESCREVER COMO EXECUTAR O PROJETO]
+Rodar esses dois comandos:
+
+- Para instalar as dependências da aplicação:
+```shell
+npm install
+```
+
+- Para rodar o projeto:
+```shell
+npm run ng serve
+```
 
 # 💜 Participe
 Quer participar dos próximos desafios? Junte-se a [maior comunidade .NET do Brasil 🇧🇷 💜](https://balta.io/discord)
