@@ -1,3 +1,21 @@
-<app-nav-bar />
+<body class="font-sans">
+    <app-nav-bar />
 
-<router-outlet />
+    <div>
+        <section id='search' class="tabcontent fixed opacity-0 left-20 top-0 h-full w-[30em] bg-gray-200 p-7 z-10">
+            <h1 class="text-gray-500 text-lg mt-6">Buscar um evento</h1>
+            <div class="relative mb-10">
+                <span class="pi pi-search absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-800"></span>
+                <input class="bg-gray-300 rounded-sm w-full h-10 mt-1 focus:outline-none pl-9" type="text" id="search" name="search" [(ngModel)]="showSearch" (keyup.enter)="searchShows()">
+            </div>
+
+            <app-event *ngFor="let show of shows" [show]="show"></app-event>
+        </section>
+
+        <app-new-event id='create' class="tabcontent fixed opacity-0 left-20 top-0 h-full w-[30em] bg-gray-200 p-4 z-10"/>
+    </div>
+
+    <app-map-comp class="z-0 h-full w-full"/>
+
+    <router-outlet />
+</body>

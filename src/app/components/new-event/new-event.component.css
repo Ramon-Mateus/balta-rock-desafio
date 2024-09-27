@@ -1,0 +1,31 @@
+label{
+    padding-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: gray;
+}
+input{
+    color: black;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+form{
+    padding: 1.5rem;
+    padding-top: 2rem;
+}
+button{
+    margin: auto;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+p{
+    margin: auto;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    font-weight: 400;
+    color: gray;
+}

@@ -1,6 +1,6 @@
-export interface Event {
-    id: number;
+export interface Show {
     name: string;
-    data: string;
+    date: string;
     local: string;
+    adress: string;
 }

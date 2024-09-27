@@ -1,0 +1,26 @@
+<form (ngSubmit)="onSubmit()" #eventForm="ngForm" class="h-full">
+    <div class="form-group" class="flex flex-col">
+        <label class="font-sans font-normal">
+            Banda
+            <br>
+            <input type="text" name="name" [(ngModel)]="model.name" #name="ngModel" required class="font-sans font-normal w-full bg-gray-300 focus:outline-none rounded-md mt-1">
+        </label>
+        <label class="font-sans font-normal">
+            Data
+            <br>
+            <input type="date" name="data" [(ngModel)]="model.date" #data="ngModel" required class="font-sans font-normal w-full bg-gray-300 focus:outline-none rounded-md mt-1">
+        </label>
+        <label class="font-sans font-normal">
+            Local
+            <br>
+            <input type="text" name="local" [(ngModel)]="model.local" #local="ngModel" required class="font-sans font-normal w-full bg-gray-300 focus:outline-none rounded-md mt-1">            
+        </label>
+        <label class="font-sans font-normal">
+            Endereço
+            <br>
+            <input type="text" name="adress" [(ngModel)]="model.adress" #local="ngModel" required class="font-sans font-normal w-full bg-gray-300 focus:outline-none rounded-md mt-1">            
+        </label>
+        <button type="submit" [disabled]="!eventForm.form.valid" class="font-sans font-normal bg-roxo-balta w-full">Salvar evento</button>
+        <p class="font-sans font-normal">Preciso de ajuda.</p>
+    </div>
+</form>
